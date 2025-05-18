@@ -108,10 +108,3 @@ Build a web app that allows users to create flashcards, review them daily using 
 
 ---
 
-### ⚡ Prompt for AI Code Editor:
-
-"Build a React app with Tailwind CSS that includes a flashcard component with flip animation, spaced repetition review logic using a simplified SM-2 algorithm, and a stats dashboard showing daily review data. Use Recharts for visualizations and store user data in localStorage."
-
----
-
-Let me know when you're ready for the second file for the itinerary board project!
