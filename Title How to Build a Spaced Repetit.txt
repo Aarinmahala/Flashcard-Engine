@@ -1,0 +1,117 @@
+**Title: How to Build a Spaced Repetition Flashcard Engine with Review Stats**
+
+---
+
+### 🔄 Project Summary
+
+Build a web app that allows users to create flashcards, review them daily using a spaced repetition system (SRS), and track review stats like accuracy and card memory strength. The app should be visually clean, responsive, and intuitive.
+
+---
+
+### 📊 Focus Areas
+
+1. **Spaced Repetition Logic**
+
+   * Use a simplified SM-2 algorithm or a custom spaced logic.
+   * Track last reviewed time, difficulty rating, and next review date.
+   * Focus on data structure that allows you to update review intervals easily.
+
+2. **Flashcard Interaction**
+
+   * Flip animation (front/back) using Framer Motion or CSS transitions.
+   * Buttons: "Got it" / "Didn’t get it" affect the next review date.
+
+3. **User Flow**
+
+   * Create decks.
+   * Add/edit/delete flashcards.
+   * Review mode that queues due cards.
+   * End-of-review summary.
+
+4. **Review Stats Dashboard**
+
+   * Track daily review count, accuracy, and upcoming reviews.
+   * Visuals: pie charts, line graphs (e.g., Recharts or Chart.js).
+
+5. **Data Storage**
+
+   * MVP: LocalStorage.
+   * Scalable option: Firebase/Firestore for user auth + sync.
+
+---
+
+### ⚙️ Tech Stack & Tools
+
+* **Frontend Framework**: React.js
+* **Styling**: Tailwind CSS or SCSS
+* **Animation**: Framer Motion
+* **Data Storage**: LocalStorage or Firebase
+* **Charting Library**: Recharts / Chart.js
+
+---
+
+### 🛠️ Feature Checklist
+
+#### Card Decks
+
+* [ ] Create / Rename / Delete deck
+
+#### Flashcards
+
+* [ ] Add card (front/back)
+* [ ] Edit / Delete card
+
+#### Review Engine
+
+* [ ] Queue due cards
+* [ ] Flip animation
+* [ ] Got it / Didn’t get it buttons
+* [ ] Adjust next review based on response
+
+#### Review Stats
+
+* [ ] Cards reviewed today
+* [ ] Accuracy
+* [ ] Next reviews due
+* [ ] Simple visualizations (pie or line chart)
+
+#### Optional
+
+* [ ] User login + cloud sync (Firebase)
+* [ ] Export/import decks as JSON
+* [ ] Dark mode
+
+---
+
+### ✅ Judging Criteria Focus
+
+**User Experience**
+
+* Clear flows: create > review > see stats.
+* Responsive UI with helpful animations.
+
+**Visual Design**
+
+* Cards with smooth flip.
+* Stats section with colorful, minimalist charts.
+
+**Functionality**
+
+* Every button and logic must work as expected.
+* Make sure review logic is bug-free.
+
+**Code Quality**
+
+* Modular components.
+* Separate logic for review algorithm.
+* Clean folder structure.
+
+---
+
+### ⚡ Prompt for AI Code Editor:
+
+"Build a React app with Tailwind CSS that includes a flashcard component with flip animation, spaced repetition review logic using a simplified SM-2 algorithm, and a stats dashboard showing daily review data. Use Recharts for visualizations and store user data in localStorage."
+
+---
+
+Let me know when you're ready for the second file for the itinerary board project!

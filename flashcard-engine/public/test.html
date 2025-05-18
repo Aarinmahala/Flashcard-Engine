@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      background-color: #4a7dff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3a6be0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Test Page</h1>
+    <p>This is a simple test page to check if HTML and JavaScript are working correctly.</p>
+    <p id="result">Click the button to run a test.</p>
+    <button id="testButton">Run Test</button>
+  </div>
+
+  <script>
+    console.log('Test script is running');
+    document.getElementById('testButton').addEventListener('click', function() {
+      console.log('Button clicked');
+      document.getElementById('result').textContent = 'Test successful! JavaScript is working. ' + new Date().toLocaleTimeString();
+    });
+  </script>
+</body>
+</html> 
